@@ -11,32 +11,147 @@ body {
 	line-height: 1.4;
 }
 
-/* Fonts */
+
 h1 {
 	font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
 	font-size: 2.5em;
 	font-weight: bold;
-}
-
-.container {
-	margin: 2em auto;
-	max-width: 630px;
 	text-align: center;
 }
 
-/* The following font information and color codes are provided for you.  They do not match the prototype exactly, but they are fine to use for the assignment and doing so does not count against you.  They are simply meant to help you save time.  We would like everyone to have as close to a pixel-perfect match to the prototype as possible.  If you do find a font/color that matches more precisely, please share it with the team so we can improve the activity for future applicants.  Thank you!  Happy coding!
+/*header*/
+.header {
+	max-width: 600px;
+	margin: 2em auto;
+}
 
-	FONTS:
-	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
-	font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
+/*main container div*/
+.container {
+	margin: 2em auto;
+	max-width: 260px;
+	text-align: center;
+}
 
-  COLORS:
-  blue: #20A1D4;
-  green: #1CBC2C;
-  orange: #EF5F3C;
-  black: #424242;
-  grey: #777;
-  light grey: #eaeaea;
-*/
 
-/* Your CSS code goes here */
+/*speech bubble*/
+.speech-bubble {
+	position: relative;
+	background: #424242;
+	border: 4px solid #424242;
+	color: #eaeaea;
+	border-radius: 3px;
+	margin-top: -18px;
+}
+.speech-bubble:after, .speech-bubble:before {
+	top: 100%;
+	right: 10%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.speech-bubble:after {
+	border-color: rgba(66, 66, 66, 0);
+	border-top-color: #424242;
+	border-width: 4px;
+	margin-left: -4px;
+}
+.speech-bubble:before {
+	border-color: rgba(66, 66, 66, 0);
+	border-top-color: #424242;
+	border-width: 10px;
+	margin-left: -10px;
+}
+
+/*text inside bubble*/
+.needed {
+	padding: 10px;
+	font-size: .8em;
+}
+
+span {
+	font-weight: bold;
+}
+
+/*main box*/
+.box {
+	border: 1px solid #eaeaea;
+	height: 200px;
+	margin-top: 8px;
+	box-shadow: .3px 2px #f6f6f6;
+}
+
+/*progress bar*/
+.progressbar {
+	background-color: #f6f6f6;
+	border-bottom: 1px solid #eaeaea;
+}
+
+.progressbar>div {
+	background-color: #EF5F3C;
+	width: 75%;
+	height: 10px;
+}
+
+/*Box text*/
+.boxtext {
+	font-size: .7em;
+	color: #777;
+	margin: 18px;
+	text-align: left;
+}
+
+#daysLeft {
+	color: #EF5F3C;
+}
+
+/*input and button*/
+input {
+	width: 102px;
+	height: 40px;
+	margin: 6px;
+	border-radius: 3px;
+/*	margin-top: -5px;*/
+}
+
+input[type=number] {
+	font-weight: bold;
+}
+
+input[type=button] {
+	background-color: #1CBC2C;
+	color: #fff;
+	font-family: Avenir-Book;
+	font-size: .8em;
+	font-weight: bold;
+}
+
+/*why give?*/
+#whyGive {
+	margin-top: 0px;
+	color: #20A1D4;
+}
+
+/*buttons*/
+.button {
+	background-color: #f6f6f6;
+	color: #777;
+	font-size: .7em;
+	font-family: Avenir-Book;
+	font-weight: bold;
+	padding: 5px;
+	margin: 10px 0px;
+	height: 34px;
+	width: 118px;
+	border-radius: 3px;
+	box-shadow: .3px 2px #eaeaea;
+}
+
+#save {
+	margin: 10px 10px 10px 0px;
+}
+
+
